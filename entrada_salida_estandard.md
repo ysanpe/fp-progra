@@ -23,6 +23,7 @@ Scanner recibe en el constructor un stream, podría ser de teclado o de otros ti
 ## Ejemplo entrada estándar de sistema
 
 ```java
+// importamos la clase Scanner del paquete java.util. Java es un paquete y util otro paquete dentro de java
 import java.util.Scanner;
 
 public class EntradaDeTeclado {
@@ -74,5 +75,35 @@ public class EntradaDeTeclado {
         // metodo que devuelve la entrada de tipo numero
         return this.entradaNumero;
     }
+}
+
+
+
+public class Principal { 
+    
+    public static void main (String[] args) { 
+        // creo mi lector de teclado
+        EntradaDeTeclado teclado = new EntradaDeTeclado() ;
+        
+        // creo las variables que van a almacenar las entradas de teclado
+        // de tipo entero y de tipo texto
+        int numero1;
+        String numero2; 
+        
+        // leo la primera entrada y la leo de tipo numerico asi que la almaceno en una variable numerica
+        System.out.println("Introduce un número");
+        teclado.pedirEntradaNumero();
+        numero1 = teclado.getEntradaNumero();
+        
+        // leo la segunda entrada y la leo de tipo texto asi que la almaceno en una variable tipo string
+        System.out.println("Introduce otro número");
+        teclado.pedirEntradaTexto();    
+        numero2 = teclado.getEntradaTexto();
+
+        // muestro las entradas
+        System.out.println("La variable numero1 vale " + numero1);
+        System.out.println("La variable numero2 vale " + numero2);
+    }
+       
 }
 ```

@@ -32,6 +32,10 @@ public class Bebida {
     public void mostrarEtiqueta() {
         System.out.println("Mi etiqueta es " + this.etiqueta);
     }
+
+    public String toString() {
+        return "Mi bebida es " + this.color + " y sabe "  + this.sabor;
+    }
 }
 
 
@@ -43,6 +47,7 @@ public class Programa {
         // Siempre podemos acceder a los elementos públicos definidos en la clase, ya sean atributos o métodos. Nos referiremos a ellos poniendo la variable que almacena el objeto seguido de un punto y el nombre del atributo o método
         bebida1.etiqueta = "cuadrada";
         bebida1.mostrarEtiqueta();
+        System.out.println(bebida)
 
     }
 }
