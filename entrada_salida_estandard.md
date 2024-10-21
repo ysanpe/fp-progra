@@ -1,4 +1,5 @@
 Salida estandard de sistema
+===========================
 
 System.out.println
 
