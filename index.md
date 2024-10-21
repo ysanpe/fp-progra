@@ -6,5 +6,5 @@ title: Progra
 # Índice de documentos
 
 {% for page in site.pages %}
-  - [{{ page.basename }}]({{ page.url }})
+  - [{{ page.name | remove ".md" }}]({{ page.url }})
 {% endfor %}
