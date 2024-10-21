@@ -1,4 +1,4 @@
-# Salida estandard de sistema
+# Salida estándar de sistema
 ```
 System.out.println
 ```
@@ -7,15 +7,20 @@ System es una clase a la que se puede llamar sin importar su paquete ya que pert
 out.println son atributos estáticos de la clase System 
 println imprime por salida estándar un String
 
+## Ejemplo salida estándar de sistema
+```java
+System.out.println("Hola, mundo!"); 
+```
 
-# Entrada estandard de sistema
+
+# Entrada estándar de sistema
 
 Para leer datos de la entrada estándar de sistema (normalmente el teclado) java usa tambien la clase System, pero en este caso en vez de usar System.out utilizará System.in (flujo de entrada estándar).
 Para leer de este flujo, es necesario utilizar la clase Scanner.
 
 Scanner recibe en el constructor un stream, podría ser de teclado o de otros tipos. Estos streams tienen que ser de tipo InputStream.
 
-## Ejemplo entrada estandard de sistema
+## Ejemplo entrada estándar de sistema
 
 ```java
 import java.util.Scanner;
@@ -48,13 +53,13 @@ public class EntradaDeTeclado {
     }
     
     public void pedirEntradaTexto() {
-        // uso el scanner para leer de la entrada estandard de sistema un string y lo almaceno en entradaTexto
+        // uso el scanner para leer de la entrada estándar de sistema un string y lo almaceno en entradaTexto
         this.reInicializarEscaner();
         this.entradaTexto = this.entradaEscaner.nextLine();
     }
     
     public void pedirEntradaNumero() {
-        // uso el scanner para leer de la entrada estandard de sistema un entero y lo almaceno en entradaNumero
+        // uso el scanner para leer de la entrada estándar de sistema un entero y lo almaceno en entradaNumero
         this.reInicializarEscaner();
         this.entradaNumero = this.entradaEscaner.nextInt();
     }
